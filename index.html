@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wedding Invitation Generator - Zalza & Azhar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>💜 Wedding Invitation Generator</h1>
+        <p>Buat link & kirim undangan otomatis 💐</p>
+
+        <form id="generatorForm">
+            <label for="guestList">Daftar Tamu (Nama - Nomor WA)</label>
+            <div style="width: 100%;">
+                <textarea id="guestList" placeholder="Contoh: Hasan - 6281234567890" required></textarea>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="submit">Generate Undangan</button>
+            </div>
+        </form>
+
+        <div id="resultList" class="result-list"></div>
+
+        <footer>© 2025 Zalza & Azhar Wedding 💕</footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
