@@ -20,7 +20,7 @@ document.getElementById("generatorForm").addEventListener("submit", function (e)
     }
 
     const encodedName = encodeURIComponent(name);
-    const inviteLink = `https://zarriq22.github.io/zalza-azhar-wedding/?to=${encodedName}`;
+    const inviteLink = `https://azhar-zalza-wedding.vercel.app?to=${encodedName}`;
 
     const message = `
 Kepada Yth.
@@ -29,7 +29,7 @@ ${name}
 
 _____________________
 
-Assalamualaikum Warahmatullahi Wabarakatuh.
+Assalaamualaikum Warahmatullaahi Wabarakaatuh.
 
 Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami.
 
@@ -39,7 +39,7 @@ ${inviteLink}
 
 Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
 
-Wassalamualaikum Warahmatullahi Wabarakatuh.
+Wassalaamualaikum Warahmatullaahi Wabarakaatuh.
 
 Terima Kasih
 
