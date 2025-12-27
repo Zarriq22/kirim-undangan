@@ -10,14 +10,32 @@
         <h1>💜 Wedding Invitation Generator</h1>
         <p>Buat link & kirim undangan otomatis 💐</p>
 
-        <form id="generatorForm">
-            <label for="guestList">Daftar Undangan (Nama - Nomor WA)</label>
-            <div style="width: 100%;">
-                <textarea id="guestList" placeholder="Contoh: Hasan - 6281234567890" required></textarea>
+        <form id="generatorForm" class="card">
+            <div class="form-group" style="padding-bottom: 8px;">
+                <label for="inputLink">Link Undangan</label>
+                <input
+                    type="url"
+                    id="inputLink"
+                    placeholder="https://zalza-azhar.my.id"
+                    required
+                    style="height: 24px;"
+                />
+                <small>Link undangan utama (tanpa nama tamu)</small>
             </div>
-            <div style="display: flex; justify-content: center;">
-                <button type="submit">Generate Undangan</button>
+
+            <div class="form-group">
+            <label for="guestList">Daftar Tamu</label>
+            <textarea
+                id="guestList"
+                placeholder="Contoh: Hasan - 6281234567890"
+                required
+            ></textarea>
+            <small>Format: Nama - Nomor WhatsApp (1 baris per tamu)</small>
             </div>
+
+            <button type="submit" class="btn-primary">
+            🚀 Generate Undangan
+            </button>
         </form>
 
         <div id="resultList" class="result-list"></div>

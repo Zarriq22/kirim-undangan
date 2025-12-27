@@ -2,6 +2,7 @@ document.getElementById("generatorForm").addEventListener("submit", function (e)
   e.preventDefault();
 
   const list = document.getElementById("guestList").value.trim();
+  const link = document.getElementById("inputLink").value;
   if (!list) return alert("Masukkan daftar tamu dulu bro 😄");
 
   const lines = list.split("\n").map(l => l.trim()).filter(l => l);
@@ -20,7 +21,7 @@ document.getElementById("generatorForm").addEventListener("submit", function (e)
     }
 
     const encodedName = encodeURIComponent(name);
-    const inviteLink = `https://azhar-zalza-wedding.vercel.app?to=${encodedName}`;
+    const inviteLink = `${link}?to=${encodedName}`;
 
     const message = `
 Kepada Yth.
